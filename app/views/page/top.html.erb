@@ -1,0 +1,13 @@
+<h1 class="title">過去問共有</h1>
+<div class=select>
+  
+  <%= form_with(url: lectures_index_path, local: true) do |form|%>
+   <%= form.label :"学科名"%>
+  <%= form.collection_select :department, @departments,:id, :name%>
+  <%= form.submit "検索"%>
+  
+  
+  <%end%>
+</div>
+
+<%= link_to("過去問投稿画面","/reports/new")%>
