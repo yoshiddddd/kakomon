@@ -1,8 +1,8 @@
 <% @lectures.each do |lecture|%>
    <%= lecture.name%>
 <%end%>
-<<% @teachers.each do |s|%>
-<%= s%>
+<<% @lectures.each do |s|%>
+<%= s.teacher.name%>
 <%end%>
-<%= @lectures.all%>
+
 
